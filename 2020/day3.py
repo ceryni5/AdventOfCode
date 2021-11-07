@@ -2,8 +2,6 @@ import numpy as np
 import math
 
 # day 3
-
-
 def main():
 
     # Get data
