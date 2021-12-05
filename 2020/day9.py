@@ -23,7 +23,7 @@ def main():
         for j in range(1, len(data)):
             sequence = data[i:j]
             if sum(sequence) == p1:
-                print(sequence)
+                # print(sequence)
                 print(min(sequence) + max(sequence))
                 quit()
             if sum(sequence) > p1:
