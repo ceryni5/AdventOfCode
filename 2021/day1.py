@@ -5,7 +5,7 @@ def main():
     deeper = []
     depth = data[0]
     for line in data:
-        deeper.append(line >= depth)
+        deeper.append(line > depth)
         depth = line
 
     print(sum(deeper))
@@ -13,7 +13,7 @@ def main():
     deeper = []
     depth = sum(data[0:3])
     for idx, l in enumerate(data):
-        deeper.append(sum(data[idx:idx+3]) >= depth)
+        deeper.append(sum(data[idx:idx+3]) > depth)
         depth = sum(data[idx:idx+3])
 
     print(sum(deeper))
